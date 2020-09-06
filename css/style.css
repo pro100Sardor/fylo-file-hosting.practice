@@ -129,6 +129,17 @@ body {
   text-align: center;
 }
 
+.hero-section::before {
+  content: "";
+  width: 304px;
+  height: 225px;
+  margin: 33px;
+  background-image: url("../img/hero-illustration.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .hero-image {
   order: -1;
   width: 304px;
@@ -227,6 +238,85 @@ body {
 
 /*===== SECOND SECTION styles ended =====*/
 
+/*===== THIRD SECTION styles started =====*/
+
+.performance-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 160px;
+  padding-left: 28px;
+  padding-right: 27px;
+}
+
+.performance-section-container::before {
+  content: "";
+  width: 304px;
+  height: 229px;
+  margin-bottom: 48px;
+  background-image: url("../img/productivity.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.performance-section-title {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.performance-section-desctiption {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 16px;
+}
+
+.performance-section-link {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  border-bottom: 1px solid #62E0D9;
+  padding-bottom: 6px;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 16px;
+  color: #62E0D9;
+}
+
+.performance-section-link:after {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 7px;
+  box-shadow: 0 0 1px 1px #62E0D9;
+  border-radius: 50%;
+  background-color: #62E0D9;
+  background-image: url("../img/shape.svg");
+  background-size: 8px 8px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/*===== THIRD SECTION styles ended =====*/
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  .hero-section::before {
+    background-image: url("../img/hero-illustration@2x.png");
+  }
+}
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
@@ -251,4 +341,17 @@ only screen and (                min-resolution: 2dppx) {
     background-image: url("../img/feature-types@2x.png");
   }
 
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  .performance-section-container::before {
+    background-image: url("../img/productivity@2x.pngproductivity.png");
+  }
 }
